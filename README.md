@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 📦 Placeholder Image Generator
 
-First, run the development server:
+**place.davidhtml.xyz** — a simple and lightweight service to generate dynamic placeholder images on the fly. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🌐 Live Demo
+
+🔗 [https://place.davidhtml.xyz](https://place.davidhtml.xyz)
+
+---
+
+## 🧠 How It Works
+
+The API generates an image based on the following `query` parameters:
+
+| Parameter | Description               | Example      |
+|-----------|---------------------------|--------------|
+| `width`   | Image width in pixels     | `300`        |
+| `height`  | Image height in pixels    | `200`        |
+| `bg`      | Background color (hex)    | `cccccc`     |
+| `color`   | Text color (hex)          | `333333`     |
+| `format`  | Image format              | `png`, `jpeg`, `webp` |
+
+---
+
+## 🖼 Usage Examples
+
+- Basic placeholder image (300×200):
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://place.davidhtml.xyz/api/image?width=300\&height=200
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Red background, white text in JPEG format:
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+https://place.davidhtml.xyz/api/image?width=400\&height=300\&bg=ff0000\&color=ffffff\&format=jpeg
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 600×400 WebP image with dark background:
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://place.davidhtml.xyz/api/image?width=600\&height=400\&bg=111111\&color=eeeeee\&format=webp
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+
+---
+
+## 🚀 Built With
+
+- [Next.js 14](https://nextjs.org/)
+- App Router
+- `canvas` for image generation on the server
+- Deployable via [Vercel](https://vercel.com/) or other platforms
+
+---
+
+## 📁 Project Structure
+
+```
+
+app/
+├─ api/
+│  └─ image/route.ts     → Image generator API route
+├─ page.tsx              → Main page (documentation)
+public/
+styles/
+
+```
+
+---
+
+## 🧪 Roadmap
+
+- ✅ Support for multiple formats (`png`, `jpeg`, `webp`)
+- ✅ Custom background and text color
+<!-- - ⏳ Support for custom text (`?text=Hello`) -->
+<!-- - ⏳ Font size control -->
+<!-- - ⏳ Emoji support -->
+<!-- - ⏳ CORS headers and CDN optimization -->
+
+---
+
+## 📜 License
+
+MIT License. Free for personal and commercial use.
+
+---
+
+> ✨ Created by [David](https://t.me/theoksigen)

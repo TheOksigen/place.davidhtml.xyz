@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Dynamic Placeholder Image Generator - Customizable & Free",
+    "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG, WebP.",
+    "keywords": "placeholder image, dynamic image, image generator, web development, design tools, free API, customizable image, dummy image, Next.js placeholder, google placeholder",
+    "og": {
+      "title": "Dynamic Placeholder Image Generator - Customizable & Free",
+      "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG, WebP.",
+      "siteName": "Placeholder API",
+      "imageAlt": "A customizable placeholder image showing dimensions"
+    },
+    "twitter": {
+      "title": "Dynamic Placeholder Image Generator - Customizable & Free",
+      "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG, WebP.",
+      "imageAlt": "A customizable placeholder image showing dimensions"
+    }
+  },
+  "main": {
+    "hero": {
+      "title": "Your Ultimate Placeholder Image Solution",
+      "description": "Generate dynamic and customizable placeholder images for your web projects with ease. Fast, flexible, and free.",
+      "cta": "Get Started"
+    },
+    "features": {
+      "title": "Why Choose Our API?",
+      "customizable": {
+        "title": "Highly Customizable",
+        "description": "Adjust dimensions, background, text color, and image format to perfectly match your design needs."
+      },
+      "fast": {
+        "title": "Blazing Fast",
+        "description": "Our API delivers images instantly, ensuring your development workflow remains smooth and efficient."
+      },
+      "flexible": {
+        "title": "Flexible Formats",
+        "description": "Choose between PNG, JPEG, and WebP to optimize image quality and file size for any use case."
+      }
+    },
+    "callToAction": {
+      "title": "Ready to Simplify Your Workflow?",
+      "description": "Start generating beautiful placeholder images in seconds. No sign-up required!",
+      "button": "View Documentation"
+    }
+  },
+  "docs": {
+    "title": "Placeholder Image API",
+    "hero": {
+      "title": "Dynamic Placeholder Image Generator",
+      "description": "Generate custom placeholder images on-the-fly with customizable dimensions, colors, and formats.",
+      "badges": {
+        "free": "Free",
+        "fast": "Fast",
+        "customizable": "Customizable"
+      }
+    },
+    "tabs": {
+      "overview": "Overview",
+      "parameters": "Parameters",
+      "examples": "Examples",
+      "playground": "Playground"
+    },
+    "overview": {
+      "quickStart": {
+        "title": "Quick Start",
+        "description": "Get started with a simple API call to generate your first placeholder image.",
+        "baseUrl": "https://yoursite.com"
+      },
+      "features": {
+        "title": "Key Features",
+        "customizable": {
+          "title": "Fully Customizable",
+          "description": "Control dimensions, colors, and output format with URL parameters."
+        },
+        "formats": {
+          "title": "Multiple Formats",
+          "description": "Support for PNG, JPEG, and WebP image formats."
+        }
+      }
+    },
+    "parameters": {
+      "title": "API Parameters",
+      "description": "All parameters are optional and passed as URL query parameters.",
+      "default": "Default",
+      "width": "Image width in pixels",
+      "height": "Image height in pixels",
+      "background": "Background color (hex without #)",
+      "textColor": "Text color (hex without #)",
+      "format": "Output format (png, jpeg, webp)"
+    },
+    "examples": {
+      "basic": {
+        "title": "Basic Usage",
+        "description": "Simple placeholder with default styling"
+      },
+      "colored": {
+        "title": "Blue Background",
+        "description": "Custom blue background with white text"
+      },
+      "square": {
+        "title": "Square Format",
+        "description": "Perfect square with green background"
+      },
+      "wide": {
+        "title": "Wide Banner",
+        "description": "Wide banner format with yellow background"
+      }
+    },
+    "playground": {
+      "title": "Interactive Playground",
+      "description": "Experiment with different parameters and see the results in real-time.",
+      "width": "Width",
+      "height": "Height",
+      "background": "Background Color",
+      "textColor": "Text Color",
+      "format": "Format"
+    }
+  }
+}
