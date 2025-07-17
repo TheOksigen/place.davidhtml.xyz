@@ -317,7 +317,6 @@ export default function DocsPage() {
                           <SelectContent>
                             <SelectItem value="png">PNG</SelectItem>
                             <SelectItem value="jpeg">JPEG</SelectItem>
-                            <SelectItem value="webp">WebP</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>

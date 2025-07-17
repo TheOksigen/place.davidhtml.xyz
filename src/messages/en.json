@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "Dynamic Placeholder Image Generator - Customizable & Free",
-    "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG, WebP.",
+    "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG.",
     "keywords": "placeholder image, dynamic image, image generator, web development, design tools, free API, customizable image, dummy image, Next.js placeholder, google placeholder",
     "og": {
       "title": "Dynamic Placeholder Image Generator - Customizable & Free",
-      "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG, WebP.",
+      "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG.",
       "siteName": "Placeholder API",
       "imageAlt": "A customizable placeholder image showing dimensions"
     },
     "twitter": {
       "title": "Dynamic Placeholder Image Generator - Customizable & Free",
-      "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG, WebP.",
+      "description": "Generate custom placeholder images on-the-fly for your web projects. Fast, flexible, and free API for developers and designers. Supports PNG, JPEG.",
       "imageAlt": "A customizable placeholder image showing dimensions"
     }
   },
@@ -33,7 +33,7 @@
       },
       "flexible": {
         "title": "Flexible Formats",
-        "description": "Choose between PNG, JPEG, and WebP to optimize image quality and file size for any use case."
+        "description": "Choose between PNG, JPEG to optimize image quality and file size for any use case."
       }
     },
     "callToAction": {
@@ -73,7 +73,7 @@
         },
         "formats": {
           "title": "Multiple Formats",
-          "description": "Support for PNG, JPEG, and WebP image formats."
+          "description": "Support for PNG, JPEG image formats."
         }
       }
     },
@@ -85,7 +85,7 @@
       "height": "Image height in pixels",
       "background": "Background color (hex without #)",
       "textColor": "Text color (hex without #)",
-      "format": "Output format (png, jpeg, webp)"
+      "format": "Output format (png, jpeg)"
     },
     "examples": {
       "basic": {

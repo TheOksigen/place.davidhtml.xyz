@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "Dinamik Placeholder Şəkil Generatoru - Fərdiləşdirilə bilən və Pulsuz",
-    "description": "Veb layihələriniz üçün dinamik və fərdiləşdirilə bilən placeholder şəkilləri asanlıqla yaradın. Tərtibatçılar və dizaynerlər üçün sürətli, çevik və pulsuz API. PNG, JPEG, WebP dəstəkləyir.",
+    "description": "Veb layihələriniz üçün dinamik və fərdiləşdirilə bilən placeholder şəkilləri asanlıqla yaradın. Tərtibatçılar və dizaynerlər üçün sürətli, çevik və pulsuz API. PNG, JPEG dəstəkləyir.",
     "keywords": "placeholder şəkil, dinamik şəkil, şəkil generatoru, veb inkişafı, dizayn alətləri, pulsuz API, fərdiləşdirilə bilən şəkil, dummy şəkil, Next.js placeholder, google placeholder",
     "og": {
       "title": "Dinamik Placeholder Şəkil Generatoru - Fərdiləşdirilə bilən və Pulsuz",
-      "description": "Veb layihələriniz üçün dinamik və fərdiləşdirilə bilən placeholder şəkilləri asanlıqla yaradın. Tərtibatçılar və dizaynerlər üçün sürətli, çevik və pulsuz API. PNG, JPEG, WebP dəstəkləyir.",
+      "description": "Veb layihələriniz üçün dinamik və fərdiləşdirilə bilən placeholder şəkilləri asanlıqla yaradın. Tərtibatçılar və dizaynerlər üçün sürətli, çevik və pulsuz API. PNG, JPEG dəstəkləyir.",
       "siteName": "Placeholder API",
       "imageAlt": "Ölçüləri göstərən fərdiləşdirilə bilən placeholder şəkil"
     },
     "twitter": {
       "title": "Dinamik Placeholder Şəkil Generatoru - Fərdiləşdirilə bilən və Pulsuz",
-      "description": "Veb layihələriniz üçün dinamik və fərdiləşdirilə bilən placeholder şəkilləri asanlıqla yaradın. Tərtibatçılar və dizaynerlər üçün sürətli, çevik və pulsuz API. PNG, JPEG, WebP dəstəkləyir.",
+      "description": "Veb layihələriniz üçün dinamik və fərdiləşdirilə bilən placeholder şəkilləri asanlıqla yaradın. Tərtibatçılar və dizaynerlər üçün sürətli, çevik və pulsuz API. PNG, JPEG dəstəkləyir.",
       "imageAlt": "Ölçüləri göstərən fərdiləşdirilə bilən placeholder şəkil"
     }
   },
@@ -33,7 +33,7 @@
       },
       "flexible": {
         "title": "Çevik Formatlar",
-        "description": "İstənilən istifadə halı üçün şəkil keyfiyyətini və fayl ölçüsünü optimallaşdırmaq üçün PNG, JPEG və WebP arasında seçim edin."
+        "description": "İstənilən istifadə halı üçün şəkil keyfiyyətini və fayl ölçüsünü optimallaşdırmaq üçün PNG, JPEG arasında seçim edin."
       }
     },
     "callToAction": {
@@ -73,7 +73,7 @@
         },
         "formats": {
           "title": "Çoxlu formatlar",
-          "description": "PNG, JPEG və WebP şəkil formatları üçün dəstək."
+          "description": "PNG, JPEG və şəkil formatları üçün dəstək."
         }
       }
     },
@@ -85,7 +85,7 @@
       "height": "Şəklin hündürlüyü piksellərlə",
       "background": "Arxa plan rəngi (# olmadan hex)",
       "textColor": "Mətn rəngi (# olmadan hex)",
-      "format": "Çıxış formatı (png, jpeg, webp)"
+      "format": "Çıxış formatı (png, jpeg)"
     },
     "examples": {
       "basic": {

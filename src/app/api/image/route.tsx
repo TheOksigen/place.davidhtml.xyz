@@ -34,10 +34,6 @@ export async function GET(req: NextRequest) {
             buffer = canvas.toBuffer('image/jpeg')
             contentType = 'image/jpeg'
             break
-        case 'webp':
-            buffer = canvas.toBuffer('image/webp')
-            contentType = 'image/webp'
-            break
         default:
             buffer = canvas.toBuffer('image/png')
             contentType = 'image/png'

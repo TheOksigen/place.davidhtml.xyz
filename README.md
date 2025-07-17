@@ -21,7 +21,7 @@ The API generates an image based on the following `query` parameters:
 | `height`  | Image height in pixels    | `200`        |
 | `bg`      | Background color (hex)    | `cccccc`     |
 | `color`   | Text color (hex)          | `333333`     |
-| `format`  | Image format              | `png`, `jpeg`, `webp` |
+| `format`  | Image format              | `png`, `jpeg` |
 
 ---
 
@@ -43,13 +43,6 @@ https://place.davidhtml.xyz/api/image?width=400\&height=300\&bg=ff0000\&color=ff
 
 ```
 
-- 600×400 WebP image with dark background:
-
-```
-
-https://place.davidhtml.xyz/api/image?width=600\&height=400\&bg=111111\&color=eeeeee\&format=webp
-
-```
 
 ---
 
@@ -79,7 +72,7 @@ styles/
 
 ## 🧪 Roadmap
 
-- ✅ Support for multiple formats (`png`, `jpeg`, `webp`)
+- ✅ Support for multiple formats (`png`, `jpeg`)
 - ✅ Custom background and text color
 <!-- - ⏳ Support for custom text (`?text=Hello`) -->
 <!-- - ⏳ Font size control -->
