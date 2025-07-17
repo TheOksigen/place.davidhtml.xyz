@@ -1,50 +1,61 @@
-import { createCanvas } from "canvas";
-import { NextRequest } from "next/server";
+import { ImageResponse } from "@vercel/og"
+import type { NextRequest } from "next/server"
 
-export async function GET(req: NextRequest) {
-    const { searchParams } = new URL(req.url);
+export const runtime = "edge"
 
-    const width = parseInt(searchParams.get('w') || '300')
-    const height = parseInt(searchParams.get('h') || '150')
-    const bg = '#' + (searchParams.get('bg') || 'cccccc')
-    const color = '#' + (searchParams.get('color') || '333333')
-    const format = (searchParams.get('format') || 'png').toLowerCase()
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url)
 
+    // Parse parameters with default values
+    const width = Number.parseInt(searchParams.get("w") || "400")
+    const height = Number.parseInt(searchParams.get("h") || "200")
+    const bgColor = searchParams.get("bg") || "cccccc"
+    const textColor = searchParams.get("color") || "333333"
+    const format = searchParams.get("format") || "png"
 
-    const canvas = createCanvas(width, height)
-    const ctx = canvas.getContext('2d')
+    // Ensure dimensions are within reasonable limits
+    const finalWidth = Math.max(1, Math.min(width, 2000))
+    const finalHeight = Math.max(1, Math.min(height, 2000))
 
-    //bg
-    ctx.fillStyle = bg
-    ctx.fillRect(0, 0, width, height)
-
-    //text
-    ctx.fillStyle = color
-    ctx.font = `${Math.min(width / 10, 40)}px sans-serif`
-    ctx.textAlign = 'center'
-    ctx.textBaseline = 'middle'
-    ctx.fillText(`${width}×${height}`, width / 2, height / 2)
-
-    let buffer: BufferSource
-    let contentType = 'image/png'
-
-    switch (format) {
-        case 'jpeg':
-        case 'jpg':
-            buffer = canvas.toBuffer('image/jpeg')
-            contentType = 'image/jpeg'
-            break
-        default:
-            buffer = canvas.toBuffer('image/png')
-            contentType = 'image/png'
-            break
+    // Determine content type based on format
+    let contentType = "image/png"
+    if (format === "jpeg") {
+      contentType = "image/jpeg"
+    } else if (format === "webp") {
+      contentType = "image/webp"
     }
 
-    return new Response(buffer, {
+    return new ImageResponse(
+      <div
+        style={{
+          display: "flex",
+          fontSize: 60,
+          color: `#${textColor}`,
+          background: `#${bgColor}`,
+          width: "100%",
+          height: "100%",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          fontFamily: "sans-serif",
+        }}
+      >
+        {`${finalWidth}x${finalHeight}`}
+      </div>,
+      {
+        width: finalWidth,
+        height: finalHeight,
         headers: {
-            'Content-Type': contentType,
-            'Cache-Control': 'public, max-age=31536000, immutable',
+          "Content-Type": contentType,
+          "Cache-Control": "public, max-age=31536000, immutable", // Cache for a long time
         },
+      },
+    )
+  } catch (e: any) {
+    console.error(e)
+    return new Response(`Failed to generate image: ${e.message}`, {
+      status: 500,
     })
-
+  }
 }
