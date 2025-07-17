@@ -63,7 +63,7 @@
       "quickStart": {
         "title": "Quick Start",
         "description": "Get started with a simple API call to generate your first placeholder image.",
-        "baseUrl": "https://yoursite.com"
+        "baseUrl": "https://place.davidhtml.xyz"
       },
       "features": {
         "title": "Key Features",
