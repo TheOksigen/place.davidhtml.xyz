@@ -16,7 +16,7 @@ export default function IndexPage() {
       <Header /> {/* Header komponenti istifadə edildi */}
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative w-full py-20 md:py-32 lg:py-40 bg-gradient-to-b from-background to-muted">
+        <section className="relative w-full py-20 md:py-32 lg:py-40 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 bg-[length:200%_200%] animate-gradient">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary mb-6">
               {t("hero.title")}
@@ -76,7 +76,7 @@ export default function IndexPage() {
           </div>
         </section>
 
-
+        {/* Call to Action Section */}
         <section className="w-full py-16 md:py-24 bg-muted">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">{t("callToAction.title")}</h2>

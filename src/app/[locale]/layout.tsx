@@ -20,8 +20,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     },
     description: t("description"),
     keywords: t("keywords").split(", "),
-    authors: [{ name: "Your Company Name" }],
-    creator: "Your Company Name",
+    authors: [{ name: "Placeholder API" }],
+    creator: "Placeholder API",
     openGraph: {
       title: t("og.title"),
       description: t("og.description"),
@@ -72,6 +72,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>

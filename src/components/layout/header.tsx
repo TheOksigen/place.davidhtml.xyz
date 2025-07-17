@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useTheme } from "next-themes"
 import { Link, useRouter, usePathname } from "@/i18n/navigation"
 import { useLocale } from "next-intl"
+import Image from "next/image"
 
 // Helper to get flag and initial for locale
 const getLocaleDisplay = (locale: string) => {
@@ -34,11 +35,12 @@ export function Header() {
   const currentLocaleDisplay = getLocaleDisplay(locale)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full mx-auto border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center justify-between">
         <div className="flex-none">
           <Link href="/" className="flex items-center space-x-2">
-            <ImageIcon className="h-7 w-7 text-primary" />
+            {/* <ImageIcon className="h-7 w-7 text-primary" /> */}
+            <Image src={"/logo.png"} alt="Placeholder API" width={28} height={28} className={`${theme === "dark" ? "invert" : ""}`} />
             <span className="font-extrabold text-xl text-primary">Placeholder API</span>
           </Link>
         </div>
