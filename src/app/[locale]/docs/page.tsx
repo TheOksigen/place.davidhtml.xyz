@@ -53,7 +53,7 @@ export default function DocsPage() {
       color: previewParams.color,
       format: previewParams.format,
     })
-    return `/api/image?${params.toString()}`
+    return `https://place.davidhtml.xyz/api/image?${params.toString()}`
   }
 
   const switchLanguage = (nextLocale: string) => {
@@ -338,7 +338,7 @@ export default function DocsPage() {
                     </div>
                     <div className="flex items-center justify-center border-2 border-dashed border-border rounded-lg p-8 bg-muted/20">
                       <img
-                        src={generatePreviewUrl() || "/placeholder.svg"}
+                        src={generatePreviewUrl()}
                         alt="Live preview"
                         className="max-w-full max-h-full border border-border rounded shadow-md"
                       />
