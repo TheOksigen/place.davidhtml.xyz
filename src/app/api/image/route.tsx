@@ -7,18 +7,16 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
 
-    // Parse parameters with default values
     const width = Number.parseInt(searchParams.get("w") || "400")
     const height = Number.parseInt(searchParams.get("h") || "200")
     const bgColor = searchParams.get("bg") || "cccccc"
     const textColor = searchParams.get("color") || "333333"
     const format = searchParams.get("format") || "png"
 
-    // Ensure dimensions are within reasonable limits
     const finalWidth = Math.max(1, Math.min(width, 2000))
     const finalHeight = Math.max(1, Math.min(height, 2000))
 
-    // Determine content type based on format
+
     let contentType = "image/png"
     if (format === "jpeg") {
       contentType = "image/jpeg"
@@ -48,7 +46,7 @@ export async function GET(request: NextRequest) {
         height: finalHeight,
         headers: {
           "Content-Type": contentType,
-          "Cache-Control": "public, max-age=31536000, immutable", // Cache for a long time
+          "Cache-Control": "public, max-age=31536000, immutable",
         },
       },
     )
